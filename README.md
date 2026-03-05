@@ -46,6 +46,10 @@ export https_proxy="http://${hostip}:10808"
 # 可选：显示当前代理状态，方便确认
 echo "WSL Proxy is active on ${hostip}:10808"
 ```
+Ctrl+o保存，Ctrl+x退出，并且运行下面命令使之生效：
+```
+source ~/.bashrc
+```
 最后用curl测试看看
 ```
 curl -I https://www.google.com
