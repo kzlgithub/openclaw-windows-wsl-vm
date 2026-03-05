@@ -7,3 +7,5 @@ openclaw官方文档：https://docs.openclaw.ai/
 ```
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
+需要等待一会<br>
+![图片描述](pic/2.png)
