@@ -1,7 +1,7 @@
 openclaw官方文档：https://docs.openclaw.ai/
 
 ### 先准备好大模型的api key
-访问https://platform.openai.com/api-keys
+访问openai平台：https://platform.openai.com/api-keys
 <br>
 生成api key，注意生成好就好复制保存好，否则之后不可见
 
