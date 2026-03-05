@@ -17,8 +17,17 @@ openclaw官方文档：https://docs.openclaw.ai/
 <br><br>
 
 ### 设置代理，让WSL可以使用windows的代理工具V2RAY
-设置-参数设置-允许来自局域网的连接
+设置-参数设置-允许来自局域网的连接<br>
 ![图片描述](pic/4.png)
+如果不知道哪个端口可用，就先测试一下<br>
+输入以下命令获取宿主机IP
+```
+cat /etc/resolv.conf | grep nameserver | awk '{print $2}'
+```
+使用curl命令测试代理是否可用(ip和端口要替换掉)
+```
+curl -I --proxy http://172.25.80.1:10808 https://www.google.com
+```
 
 ### 用管理员模式打开powershell，进入wsl，切换到root用户，执行安装命令：
 ```
