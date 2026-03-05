@@ -80,3 +80,5 @@ openclaw gateway status
 ```
 openclaw onboard --install-daemon
 ```
+### 配置大模型api key和telegram token
+根据提示粘贴输入即可
