@@ -55,10 +55,19 @@ source ~/.bashrc
 curl -I https://www.google.com
 ```
 
-### 用管理员模式打开powershell，进入wsl，切换到root用户，执行安装命令：
+### 用管理员模式打开powershell，进入wsl，执行安装命令：
 ```
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 没有安装node.js的话，会自动安装<br>
 需要等待一会<br>
 ![图片描述](pic/2.png)
+
+#### 按照提示配置，如果出现网关启动失败如下图，那么应该是新版本的运行模式没有设置，导致直接在合理退出。那么则需要运行以下命令指定本地运行模式
+```
+openclaw config set gateway.mode local
+```
+执行完命令后重启：
+```
+openclaw daemon restart
+```
