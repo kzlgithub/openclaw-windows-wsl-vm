@@ -54,6 +54,12 @@ source ~/.bashrc
 ```
 curl -I https://www.google.com
 ```
+### 安装Homebrew
+很多skill依赖这个，但是在安装过程中似乎会出现Homebrew安装失败，所以我们是先安装<br>
+用管理员模式打开powershell，执行命令：
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 ### 用管理员模式打开powershell，进入wsl，执行安装命令：
 ```
