@@ -17,10 +17,10 @@ openclaw官方文档：https://docs.openclaw.ai/
 <br><br>
 
 ### 设置代理，让WSL可以使用windows的代理工具V2RAY
-##### 设置-参数设置-允许来自局域网的连接<br>
+#### 设置-参数设置-允许来自局域网的连接<br>
 ![图片描述](pic/4.png)
 
-##### 如果不知道哪个端口可用，就先测试一下<br>
+#### 如果不知道哪个端口可用，就先测试一下<br>
 输入以下命令获取宿主机IP
 ```
 cat /etc/resolv.conf | grep nameserver | awk '{print $2}'
