@@ -2,6 +2,7 @@ openclaw官方文档：https://docs.openclaw.ai/
 
 ### 先准备好大模型的api key
 访问https://platform.openai.com/api-keys
+<br>
 生成api key，注意生成好就好复制保存好，否则之后不可见
 
 ### 官方建议使用 WSL2，使用以下命令 `wsl -l -v` 查看版本，如图：<br>
