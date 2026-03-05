@@ -72,3 +72,11 @@ openclaw config set gateway.mode local
 ```
 openclaw daemon restart
 ```
+重启后执行检查命令:
+```
+openclaw gateway status
+```
+确认没问题后，运行以下命令进入配置(如果网关没有启动失败，就不需要这么做，跟随提示一路配置即可)：
+```
+openclaw onboard --install-daemon
+```
