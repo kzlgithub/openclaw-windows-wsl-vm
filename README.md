@@ -7,6 +7,6 @@ openclaw官方文档：https://docs.openclaw.ai/
 ```
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
-没有安装node.js的话，会自动安装
+没有安装node.js的话，会自动安装<br>
 需要等待一会<br>
 ![图片描述](pic/2.png)
