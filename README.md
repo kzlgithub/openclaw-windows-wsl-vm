@@ -20,7 +20,7 @@ openclaw官方文档：https://docs.openclaw.ai/
 #### 设置-参数设置-允许来自局域网的连接<br>
 ![图片描述](pic/4.png)
 
-#### 如果不知道哪个端口可用，就先测试一下<br>
+#### 如果不知道哪个端口可用，就先测试一下，V2RAY一般是10808<br>
 输入以下命令获取宿主机IP
 ```
 cat /etc/resolv.conf | grep nameserver | awk '{print $2}'
@@ -30,6 +30,26 @@ cat /etc/resolv.conf | grep nameserver | awk '{print $2}'
 curl -I --proxy http://172.25.80.1:10808 https://www.google.com
 ```
 ![图片描述](pic/5.png)
+
+#### 设置linux系统代理
+编辑.bashrc
+```
+nano ~/.bashrc
+```
+光标移动到末尾，添加以下内容(端口换成刚才测试的可用端口)：
+```
+# 自动获取 Windows 宿主机 IP 并设置代理
+export hostip=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
+export http_proxy="http://${hostip}:10808"
+export https_proxy="http://${hostip}:10808"
+
+# 可选：显示当前代理状态，方便确认
+echo "WSL Proxy is active on ${hostip}:10808"
+```
+最后用curl测试看看
+```
+curl -I https://www.google.com
+```
 
 ### 用管理员模式打开powershell，进入wsl，切换到root用户，执行安装命令：
 ```
