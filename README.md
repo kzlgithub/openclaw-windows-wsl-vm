@@ -29,6 +29,7 @@ cat /etc/resolv.conf | grep nameserver | awk '{print $2}'
 ```
 curl -I --proxy http://172.25.80.1:10808 https://www.google.com
 ```
+![图片描述](pic/5.png)
 
 ### 用管理员模式打开powershell，进入wsl，切换到root用户，执行安装命令：
 ```
