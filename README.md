@@ -64,6 +64,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 ![图片描述](pic/2.png)
 
 #### 按照提示配置，如果出现网关启动失败如下图，那么应该是新版本的运行模式没有设置，导致直接在合理退出。那么则需要运行以下命令指定本地运行模式
+![图片描述](pic/6.png)
 ```
 openclaw config set gateway.mode local
 ```
