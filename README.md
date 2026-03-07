@@ -91,6 +91,12 @@ openclaw onboard --install-daemon
 根据提示粘贴输入即可
 
 
+---
+
+
+配置exec工具：https://github.com/kzlgithub/openclaw-exec-install
+
+
 ### 配对telegram
 进入机器人后(可以点击创建时候的链接进入)，输入/start，机器人回复一串消息，复制最底下的命令执行配对执行，即可通过telegram链接openclaw，如图<br>
 ![图片描述](pic/7.png)
