@@ -54,6 +54,7 @@ source ~/.bashrc
 ```
 curl -I https://www.google.com
 ```
+最后设置V2RAY开机启动，按下键盘上的 Win + R 键，输入 `shell:startup` 并回车，将V2RAY快捷方式放入<br><br
 ### 安装Homebrew
 很多skill依赖这个，但是在安装过程中似乎会出现Homebrew安装失败，所以我们是先安装<br>
 用管理员模式打开powershell，执行命令：
