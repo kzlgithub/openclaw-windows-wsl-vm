@@ -103,4 +103,5 @@ openclaw onboard --install-daemon
   <h1 style="color: #FF8C00;">常用工具和技能配置</h1>
 </div>
 
-配置exec工具：https://github.com/kzlgithub/openclaw-exec-install
+配置exec工具和tmux：https://github.com/kzlgithub/openclaw-exec-install
+
